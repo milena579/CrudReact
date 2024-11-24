@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { Card } from './componets/card/card';
+import exemploImg from '../src/assets/camiseta.webp'; 
+import { Menu } from './componets/menu/menu';
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Menu cliente="Fulano"></Menu>
+    <Card imagem="exemploImg"  titulo="teste" preco="aas" stts="asdsa"></Card>
+   </>
   );
 }
 
