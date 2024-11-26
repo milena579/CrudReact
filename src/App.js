@@ -1,23 +1,17 @@
 import './App.css';
-import { Card } from './componets/card/card';
-import exemploImg from './assets/camiseta.webp'; 
-import imgCart from './assets/carrinho.png'
-import { Menu } from './componets/menu/menu';
-import { Footer } from './componets/footer/footer';
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import Home from "./home";
+import Login from "./login";
 
 function App(){
   
   return (
-   <>
-      <Menu cliente="Fulano"></Menu>
-      <div className='divGeral'>
-        <Card imagem={`${exemploImg}`}  titulo="teste" preco="aas" stts="asdsa"></Card>
-        <Card imagem={`${exemploImg}`}  titulo="teste" preco="aas" stts="asdsa"></Card>
-        <Card imagem={`${exemploImg}`}  titulo="teste" preco="aas" stts="asdsa"></Card>
-        <Card imagem={`${exemploImg}`}  titulo="teste" preco="aas" stts="asdsa"></Card>
-      </div>
-      <Footer></Footer>
-   </>
+    <BrowserRouter>
+      <Routes>
+          <Route component = { Home }  path="/" exact />
+          <Route component = { Login }  path="/login" />
+      </Routes>
+  </BrowserRouter>
   );
 }
 
