@@ -9,16 +9,19 @@
 .menu{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px 80px 30px 80px;
     background-color:#CCBAEC;
     align-items: center;
     color: #4A327A;
-
 }
 
 .funcoes{
     display: flex;
     align-items: center;
-    width: 30%;
-    justify-content: space-between;
+    gap: 80px;
+}
+
+.funcoes img {
+    width: 30px;
+    height: 30px;
 }

@@ -9,8 +9,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 210px;
+    width: 230px;
     border-radius: 15px;
     align-items: center;
     justify-content: space-between;
